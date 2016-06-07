@@ -2,8 +2,8 @@ function getJSON(selectors, context) {
 
 	context = context || document.body;
 	var result = [],
-		firstTime = true,
-		index = 0;
+			firstTime = true,
+			index = 0;
 
 	for (var selector in selectors) {
 		if (selectors.hasOwnProperty(selector)) {

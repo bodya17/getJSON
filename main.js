@@ -2,20 +2,19 @@ function getJSON(selectors, context) {
 
 	context = context || document.body;
 	var result = [],
+		group = {},
 		firstTime = true,
 		index = 0;
 
 	for (var selector in selectors) {
 		if (selectors.hasOwnProperty(selector)) {
-
-			// cateory can be: names, membersCount, type, status
 		    var cateory = Array.prototype.slice.call(context.querySelectorAll(selectors[selector]));
 		    cateory.forEach(function(el, i, arr) {
 		    	arr[i] = el.textContent;
-		    	var group = {};
-		    	group[selector] = arr[i];
 
 		    	if (firstTime) {
+		    		group = {};
+	    			group[selector] = arr[i];
 		    		result.push(group);
 		    	}
 		    	else {
@@ -26,7 +25,7 @@ function getJSON(selectors, context) {
 		firstTime = false;
 		index = 0;
 	}
-    console.log(result);
+    return JSON.stringify(result, null, 2);
 }
 
 getJSON({

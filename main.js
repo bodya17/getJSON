@@ -1,5 +1,5 @@
 function getJSON(selectors, context) {
-  context = document.querySelectorAll('#contentArea');
+  context = document.querySelectorAll('#contentArea')[0];
   var category, // category for search (name, type etc.)
       result = []; // array of categories
 

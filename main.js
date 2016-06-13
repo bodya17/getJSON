@@ -1,8 +1,9 @@
 function getJSON(selectors, context) {
 
-  context = context || document.body;
+  context = context ? document.querySelectorAll(context)[0] : document.body;
+	console.log(context);
   var category, // category for search (name, type etc.)
-			result = []; // array of categories
+      result = []; // array of categories
 
   for (var selector in selectors) {
     if (selectors.hasOwnProperty(selector)) {
@@ -12,8 +13,8 @@ function getJSON(selectors, context) {
           result[i][selector] = category[i].textContent;
         }
         else {
-					var obj = {};
-					obj[selector] = category[i].textContent;
+          var obj = {};
+          obj[selector] = category[i].textContent;
           result.push(obj);
         }
       }
@@ -27,4 +28,4 @@ getJSON({
   membersCount: '._glo > div:last-child > ._ajw:first-child > ._52eh',
   type: '._pac',
   status: '._42ft'
-}, document.getElementById('contentArea'));
+}, '#contentArea');

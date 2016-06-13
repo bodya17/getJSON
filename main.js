@@ -1,6 +1,5 @@
 function getJSON(selectors, context) {
-//comment from cloud8
-  context = document.querySelectorAll(context)[0] || document.body;
+  context = document.querySelectorAll('#contentArea');
   var category, // category for search (name, type etc.)
       result = []; // array of categories
 
@@ -25,4 +24,4 @@ getJSON({
   membersCount: '._glo > div:last-child > ._ajw:first-child > ._52eh',
   type: '._pac',
   status: '._42ft'
-}, '#contentArea');
+});

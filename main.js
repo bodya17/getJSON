@@ -1,5 +1,5 @@
 function getJSON(selectors, context) {
-//comment from cloud8
+
   context = document.querySelectorAll(context)[0] || document.body;
   var category, // category for search (name, type etc.)
       result = []; // array of categories

@@ -27,6 +27,7 @@
 
   function getJSON(selectors) {
 
+      console.log(result);
       var context = document.querySelector('#contentArea'),
           groupsCountSoFar = result.length,
           category;
@@ -43,13 +44,12 @@
             result.push(obj);
           }
         }
-        console.log(result);
       }
       console.log("Groups count: ",  result.length);
   }
 
   var int = setInterval(function() {
-    if (document.querySelectorAll(groupContainer).length !== 0) {
+    if (document.querySelector(groupContainer)) {
       getJSON(selectors);
       remove(groupContainer);
       scrollTo(0, pageHeight());
@@ -58,7 +58,7 @@
         var end = new Date();
         console.log("Time elapsed: ", end - start);
       }
-  }, 10);
+  }, 100);
 }());
 
 /*

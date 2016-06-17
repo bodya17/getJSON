@@ -26,10 +26,11 @@
   }
 
   function getJSON(selectors) {
-      console.log(result);
-      var context = document.querySelector('#contentArea');
-      var category;
-      var groupsCountSoFar = result.length;
+
+      var context = document.querySelector('#contentArea'),
+          groupsCountSoFar = result.length,
+          category;
+
       for (var selector in selectors) {
         category = context.querySelectorAll(selectors[selector]);
         for (var i = 0, len = category.length; i < len; i++) {
@@ -42,6 +43,7 @@
             result.push(obj);
           }
         }
+        console.log(result);
       }
       console.log("Groups count: ",  result.length);
   }

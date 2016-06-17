@@ -1,3 +1,8 @@
+// go to https://www.facebook.com/search/groups/?q=searchQuery
+// open browser console
+// copy&paste this script
+// press enter and wait
+
 (function() {
   var start = new Date(),
       result = [],
@@ -58,11 +63,13 @@
         var end = new Date();
         console.log("Time elapsed: ", end - start);
       }
-  }, 100);
+  }, 1000);
 }());
 
 /*
 Testing
+
+Internet speed 3.86 Mbps
 ----------------------------------------------
 | search | items | time (minutes) | interval |
 ----------------------------------------------

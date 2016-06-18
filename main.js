@@ -1,7 +1,7 @@
 // go to https://www.facebook.com/search/groups/?q=searchQuery
 // open browser console
 // copy&paste this script
-// press enter and wait
+// press enter and and go for a cup of coffee
 
 (function() {
   var start = new Date(),

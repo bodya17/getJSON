@@ -13,10 +13,10 @@
 --
 ### Testing
 
-Internet speed: 3.86 Mbps
-Browser: Google Chrome 50.0.2661.94 (64-bit)
-URL: https://www.facebook.com/search/groups/?q=books
-Search query: books
+Internet speed: 3.86 Mbps  
+Browser: Google Chrome 50.0.2661.94 (64-bit)  
+URL: https://www.facebook.com/search/groups/?q=books  
+Search query: books  
 Items: 1095
 
 | # | time (minutes) | interval |

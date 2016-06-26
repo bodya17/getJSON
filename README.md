@@ -8,7 +8,8 @@
 * open browser console
 * copy&paste this script
 * press enter and wait
----
+
+--
 ## Testing
 
 Internet speed: 3.86 Mbps

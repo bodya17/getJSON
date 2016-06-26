@@ -1,7 +1,7 @@
 // go to https://www.facebook.com/search/groups/?q=searchQuery
 // open browser console
 // copy&paste this script
-// press enter and wait
+// press enter and and go for a cup of coffee
 
 (function() {
   var start = new Date(),
@@ -67,11 +67,11 @@
 }());
 
 /*
-##############
-##  Testing ##
-##############
+###############
+##  Testing  ##
+###############
 
-Internet speed: 3.86 Mbps
+Internet speed ≈ 3.86 Mbps
 Browser: Google Chrome 50.0.2661.94 (64-bit)
 URL: https://www.facebook.com/search/groups/?q=books
 Search query: books
